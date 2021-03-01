@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D1C46F925DCF2D20023B518 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1C46F825DCF2D20023B518 /* NiblessViewController.swift */; };
+		9D46653F25DBF66900800BEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D46653E25DBF66900800BEA /* AppDelegate.swift */; };
+		9D46654125DBF66900800BEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D46654025DBF66900800BEA /* SceneDelegate.swift */; };
+		9D46654325DBF66900800BEA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D46654225DBF66900800BEA /* MainViewController.swift */; };
+		9D46654825DBF67000800BEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D46654725DBF67000800BEA /* Assets.xcassets */; };
+		9D46654B25DBF67000800BEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D46654925DBF67000800BEA /* LaunchScreen.storyboard */; };
+		9D46655E25DC046E00800BEA /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D46655D25DC046E00800BEA /* MainViewModel.swift */; };
+		9D46656025DC047E00800BEA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D46655F25DC047E00800BEA /* MainView.swift */; };
+		9D47312625ED15A8001CFF71 /* TempRadioStationViewNew.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D47312525ED15A8001CFF71 /* TempRadioStationViewNew.xib */; };
+		9D4BB26925E76A9B00FB398F /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4BB26825E76A9B00FB398F /* UIView+Constraints.swift */; };
+		9D4BB26B25E76F1D00FB398F /* RadioStationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4BB26A25E76F1D00FB398F /* RadioStationCollectionViewCell.swift */; };
+		9DB13B8025DFD418000F4732 /* TempPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DB13B7F25DFD418000F4732 /* TempPlayerView.xib */; };
+		9DB13B8225DFD4EE000F4732 /* TempPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB13B8125DFD4EE000F4732 /* TempPlayerView.swift */; };
+		9DB6BD1A25DCE7D200CCD4F0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB6BD1925DCE7D200CCD4F0 /* SettingsView.swift */; };
+		9DB6BD1C25DCE82A00CCD4F0 /* RadioStationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB6BD1B25DCE82A00CCD4F0 /* RadioStationsView.swift */; };
+		9DB6BD1E25DCE8A100CCD4F0 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB6BD1D25DCE8A100CCD4F0 /* PlayerView.swift */; };
+		9DBD46BA25E77B7E003E5625 /* StationImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD46B925E77B7E003E5625 /* StationImageView.swift */; };
+		9DBD46BC25E7846B003E5625 /* TempRadioStationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DBD46BB25E7846B003E5625 /* TempRadioStationView.xib */; };
+		9DBD46BE25E7849A003E5625 /* TempRadioStationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD46BD25E7849A003E5625 /* TempRadioStationView.swift */; };
+		9DBD46C025E7D685003E5625 /* UIView+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD46BF25E7D685003E5625 /* UIView+CornerRadius.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9D1C46F825DCF2D20023B518 /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
+		9D46653B25DBF66900800BEA /* Radio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Radio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D46653E25DBF66900800BEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9D46654025DBF66900800BEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9D46654225DBF66900800BEA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9D46654725DBF67000800BEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D46654A25DBF67000800BEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9D46654C25DBF67000800BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D46655D25DC046E00800BEA /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		9D46655F25DC047E00800BEA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		9D47312525ED15A8001CFF71 /* TempRadioStationViewNew.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TempRadioStationViewNew.xib; sourceTree = "<group>"; };
+		9D4BB26825E76A9B00FB398F /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		9D4BB26A25E76F1D00FB398F /* RadioStationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStationCollectionViewCell.swift; sourceTree = "<group>"; };
+		9DB13B7F25DFD418000F4732 /* TempPlayerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TempPlayerView.xib; sourceTree = "<group>"; };
+		9DB13B8125DFD4EE000F4732 /* TempPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempPlayerView.swift; sourceTree = "<group>"; };
+		9DB6BD1925DCE7D200CCD4F0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		9DB6BD1B25DCE82A00CCD4F0 /* RadioStationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStationsView.swift; sourceTree = "<group>"; };
+		9DB6BD1D25DCE8A100CCD4F0 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		9DBD46B925E77B7E003E5625 /* StationImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationImageView.swift; sourceTree = "<group>"; };
+		9DBD46BB25E7846B003E5625 /* TempRadioStationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TempRadioStationView.xib; sourceTree = "<group>"; };
+		9DBD46BD25E7849A003E5625 /* TempRadioStationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempRadioStationView.swift; sourceTree = "<group>"; };
+		9DBD46BF25E7D685003E5625 /* UIView+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CornerRadius.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D46653825DBF66900800BEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D1C46F625DCF2850023B518 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				9D4BB26725E76A6D00FB398F /* UIKit */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		9D1C46F725DCF2AC0023B518 /* NiblessComponents */ = {
+			isa = PBXGroup;
+			children = (
+				9D1C46F825DCF2D20023B518 /* NiblessViewController.swift */,
+			);
+			path = NiblessComponents;
+			sourceTree = "<group>";
+		};
+		9D46653225DBF66900800BEA = {
+			isa = PBXGroup;
+			children = (
+				9D46653D25DBF66900800BEA /* Radio */,
+				9D46655225DBFC9300800BEA /* Radio_iOS */,
+				9D46655325DBFCC500800BEA /* Radio_UIKit */,
+				9D46655425DBFCEC00800BEA /* Radio_Kit */,
+				9D46653C25DBF66900800BEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D46653C25DBF66900800BEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D46653B25DBF66900800BEA /* Radio.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D46653D25DBF66900800BEA /* Radio */ = {
+			isa = PBXGroup;
+			children = (
+				9D46653E25DBF66900800BEA /* AppDelegate.swift */,
+				9D46654025DBF66900800BEA /* SceneDelegate.swift */,
+				9D46654725DBF67000800BEA /* Assets.xcassets */,
+				9D46654925DBF67000800BEA /* LaunchScreen.storyboard */,
+				9D46654C25DBF67000800BEA /* Info.plist */,
+			);
+			path = Radio;
+			sourceTree = "<group>";
+		};
+		9D46655225DBFC9300800BEA /* Radio_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9D46654225DBF66900800BEA /* MainViewController.swift */,
+			);
+			path = Radio_iOS;
+			sourceTree = "<group>";
+		};
+		9D46655325DBFCC500800BEA /* Radio_UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				9D1C46F625DCF2850023B518 /* Reusable */,
+			);
+			path = Radio_UIKit;
+			sourceTree = "<group>";
+		};
+		9D46655425DBFCEC00800BEA /* Radio_Kit */ = {
+			isa = PBXGroup;
+			children = (
+				9D46655525DBFD1400800BEA /* UILayer */,
+				9D46655625DBFD2A00800BEA /* DataLayer */,
+			);
+			path = Radio_Kit;
+			sourceTree = "<group>";
+		};
+		9D46655525DBFD1400800BEA /* UILayer */ = {
+			isa = PBXGroup;
+			children = (
+				9D46655C25DC045000800BEA /* Main */,
+			);
+			path = UILayer;
+			sourceTree = "<group>";
+		};
+		9D46655625DBFD2A00800BEA /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				9D46655725DBFD5400800BEA /* Repositories */,
+				9D46655825DBFD6500800BEA /* Model */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		9D46655725DBFD5400800BEA /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		9D46655825DBFD6500800BEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9D46655C25DC045000800BEA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9D46655D25DC046E00800BEA /* MainViewModel.swift */,
+				9D46655F25DC047E00800BEA /* MainView.swift */,
+				9D46656125DC04B300800BEA /* Subviews */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9D46656125DC04B300800BEA /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				9DB6BD1925DCE7D200CCD4F0 /* SettingsView.swift */,
+				9DB6BD1D25DCE8A100CCD4F0 /* PlayerView.swift */,
+				9D4BB26A25E76F1D00FB398F /* RadioStationCollectionViewCell.swift */,
+				9DB6BD1B25DCE82A00CCD4F0 /* RadioStationsView.swift */,
+				9DBD46B925E77B7E003E5625 /* StationImageView.swift */,
+				9D6326A925E59FC000C484B2 /* TempViews */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		9D4BB26725E76A6D00FB398F /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				9D1C46F725DCF2AC0023B518 /* NiblessComponents */,
+				9D4BB26825E76A9B00FB398F /* UIView+Constraints.swift */,
+				9DBD46BF25E7D685003E5625 /* UIView+CornerRadius.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		9D6326A925E59FC000C484B2 /* TempViews */ = {
+			isa = PBXGroup;
+			children = (
+				9DB13B7F25DFD418000F4732 /* TempPlayerView.xib */,
+				9DB13B8125DFD4EE000F4732 /* TempPlayerView.swift */,
+				9DBD46BB25E7846B003E5625 /* TempRadioStationView.xib */,
+				9DBD46BD25E7849A003E5625 /* TempRadioStationView.swift */,
+				9D47312525ED15A8001CFF71 /* TempRadioStationViewNew.xib */,
+			);
+			path = TempViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D46653A25DBF66900800BEA /* Radio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D46654F25DBF67000800BEA /* Build configuration list for PBXNativeTarget "Radio" */;
+			buildPhases = (
+				9D46653725DBF66900800BEA /* Sources */,
+				9D46653825DBF66900800BEA /* Frameworks */,
+				9D46653925DBF66900800BEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Radio;
+			productName = Radio;
+			productReference = 9D46653B25DBF66900800BEA /* Radio.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D46653325DBF66900800BEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Денис Магильницкий";
+				TargetAttributes = {
+					9D46653A25DBF66900800BEA = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 9D46653625DBF66900800BEA /* Build configuration list for PBXProject "Radio" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D46653225DBF66900800BEA;
+			productRefGroup = 9D46653C25DBF66900800BEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D46653A25DBF66900800BEA /* Radio */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D46653925DBF66900800BEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D46654B25DBF67000800BEA /* LaunchScreen.storyboard in Resources */,
+				9D46654825DBF67000800BEA /* Assets.xcassets in Resources */,
+				9D47312625ED15A8001CFF71 /* TempRadioStationViewNew.xib in Resources */,
+				9DB13B8025DFD418000F4732 /* TempPlayerView.xib in Resources */,
+				9DBD46BC25E7846B003E5625 /* TempRadioStationView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D46653725DBF66900800BEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DB13B8225DFD4EE000F4732 /* TempPlayerView.swift in Sources */,
+				9D46654325DBF66900800BEA /* MainViewController.swift in Sources */,
+				9D1C46F925DCF2D20023B518 /* NiblessViewController.swift in Sources */,
+				9D4BB26925E76A9B00FB398F /* UIView+Constraints.swift in Sources */,
+				9D46653F25DBF66900800BEA /* AppDelegate.swift in Sources */,
+				9DBD46BA25E77B7E003E5625 /* StationImageView.swift in Sources */,
+				9D46654125DBF66900800BEA /* SceneDelegate.swift in Sources */,
+				9DB6BD1E25DCE8A100CCD4F0 /* PlayerView.swift in Sources */,
+				9D4BB26B25E76F1D00FB398F /* RadioStationCollectionViewCell.swift in Sources */,
+				9DBD46C025E7D685003E5625 /* UIView+CornerRadius.swift in Sources */,
+				9D46656025DC047E00800BEA /* MainView.swift in Sources */,
+				9DB6BD1A25DCE7D200CCD4F0 /* SettingsView.swift in Sources */,
+				9DBD46BE25E7849A003E5625 /* TempRadioStationView.swift in Sources */,
+				9DB6BD1C25DCE82A00CCD4F0 /* RadioStationsView.swift in Sources */,
+				9D46655E25DC046E00800BEA /* MainViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9D46654925DBF67000800BEA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D46654A25DBF67000800BEA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D46654D25DBF67000800BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D46654E25DBF67000800BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D46655025DBF67000800BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F2LDS9UZB;
+				INFOPLIST_FILE = Radio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.magilnitsky.Radio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D46655125DBF67000800BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F2LDS9UZB;
+				INFOPLIST_FILE = Radio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.magilnitsky.Radio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D46653625DBF66900800BEA /* Build configuration list for PBXProject "Radio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D46654D25DBF67000800BEA /* Debug */,
+				9D46654E25DBF67000800BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D46654F25DBF67000800BEA /* Build configuration list for PBXNativeTarget "Radio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D46655025DBF67000800BEA /* Debug */,
+				9D46655125DBF67000800BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D46653325DBF66900800BEA /* Project object */;
+}
