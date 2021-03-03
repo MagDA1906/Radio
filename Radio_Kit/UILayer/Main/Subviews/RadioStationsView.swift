@@ -14,10 +14,12 @@ final class RadioStationsView: UIView {
     private let verticalInset: CGFloat = 8
     private let horizontalInset: CGFloat = 16
     private let cellIdentifier = "cellIdentifier"
+    private let collectionCellHeightMultiplier: CGFloat = 1.2
     
     private lazy var flowLayout: UICollectionViewFlowLayout = {
         let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.minimumLineSpacing = 16
+        flowLayout.minimumLineSpacing = 32
+        flowLayout.minimumInteritemSpacing = 8
         flowLayout.scrollDirection = .vertical
         flowLayout.sectionInset = UIEdgeInsets(top: verticalInset, left: horizontalInset, bottom: verticalInset, right: horizontalInset)
         return flowLayout
@@ -50,10 +52,9 @@ final class RadioStationsView: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-//        let height = collectionView.frame.height - verticalInset * 2
-//        let width = height
-//        let itemSize = CGSize(width: width, height: height)
-        let itemSize = CGSize(width: 100, height: 120)
+        let width = (collectionView.frame.width - horizontalInset * 2 - flowLayout.minimumInteritemSpacing * 2) / 3
+        let height = width * collectionCellHeightMultiplier
+        let itemSize = CGSize(width: width, height: height)
         flowLayout.itemSize = itemSize
     }
     

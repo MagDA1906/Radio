@@ -16,6 +16,7 @@
 		9D46655E25DC046E00800BEA /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D46655D25DC046E00800BEA /* MainViewModel.swift */; };
 		9D46656025DC047E00800BEA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D46655F25DC047E00800BEA /* MainView.swift */; };
 		9D47312625ED15A8001CFF71 /* TempRadioStationViewNew.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D47312525ED15A8001CFF71 /* TempRadioStationViewNew.xib */; };
+		9D49A0A425EF5B880014396D /* SupportingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D49A0A325EF5B880014396D /* SupportingView.swift */; };
 		9D4BB26925E76A9B00FB398F /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4BB26825E76A9B00FB398F /* UIView+Constraints.swift */; };
 		9D4BB26B25E76F1D00FB398F /* RadioStationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4BB26A25E76F1D00FB398F /* RadioStationCollectionViewCell.swift */; };
 		9DB13B8025DFD418000F4732 /* TempPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DB13B7F25DFD418000F4732 /* TempPlayerView.xib */; };
@@ -41,6 +42,7 @@
 		9D46655D25DC046E00800BEA /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		9D46655F25DC047E00800BEA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		9D47312525ED15A8001CFF71 /* TempRadioStationViewNew.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TempRadioStationViewNew.xib; sourceTree = "<group>"; };
+		9D49A0A325EF5B880014396D /* SupportingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportingView.swift; sourceTree = "<group>"; };
 		9D4BB26825E76A9B00FB398F /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		9D4BB26A25E76F1D00FB398F /* RadioStationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStationCollectionViewCell.swift; sourceTree = "<group>"; };
 		9DB13B7F25DFD418000F4732 /* TempPlayerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TempPlayerView.xib; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				9D4BB26A25E76F1D00FB398F /* RadioStationCollectionViewCell.swift */,
 				9DB6BD1B25DCE82A00CCD4F0 /* RadioStationsView.swift */,
 				9DBD46B925E77B7E003E5625 /* StationImageView.swift */,
+				9D49A0A325EF5B880014396D /* SupportingView.swift */,
 				9D6326A925E59FC000C484B2 /* TempViews */,
 			);
 			path = Subviews;
@@ -291,6 +294,7 @@
 				9D1C46F925DCF2D20023B518 /* NiblessViewController.swift in Sources */,
 				9D4BB26925E76A9B00FB398F /* UIView+Constraints.swift in Sources */,
 				9D46653F25DBF66900800BEA /* AppDelegate.swift in Sources */,
+				9D49A0A425EF5B880014396D /* SupportingView.swift in Sources */,
 				9DBD46BA25E77B7E003E5625 /* StationImageView.swift in Sources */,
 				9D46654125DBF66900800BEA /* SceneDelegate.swift in Sources */,
 				9DB6BD1E25DCE8A100CCD4F0 /* PlayerView.swift in Sources */,

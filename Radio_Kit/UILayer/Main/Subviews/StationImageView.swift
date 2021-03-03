@@ -10,37 +10,14 @@ import UIKit
 
 final class StationImageView: UIView {
     // MARK: - Properties
-    let boldBorder: Bool
-    
-    var hasBorder: Bool = false {
-        didSet {
-            guard hasBorder else { return layer.borderWidth = 0 }
-            mainView.layer.borderWidth = boldBorder ? 10 : 2
-        }
-    }
-    
     private let leftInsetView = UIView()
     private let rightInsetView = UIView()
     private let imageView = UIImageView()
-//    private let subMainView = UIView()
     
-    var mainView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .clear
-        view.layer.borderColor = UIColor.black.cgColor
-        view.layer.borderWidth = 2
-        view.setCornerRadius()
-        return view
-    }()
+    private let supportingView = SupportingView(borderShape: .circle, borderWidth: .thin, selfColor: .clear)
+    private let subSupportingView = SupportingView(borderShape: .circle, borderWidth: .none, selfColor: .some)
     
-    let subMainView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .orange
-//        view.setCornerRadius()
-        return view
-    }()
-    
-    private lazy var titleStationStackView = UIStackView(arrangedSubviews: [leftInsetView, mainView, rightInsetView])
+    private lazy var titleStationStackView = UIStackView(arrangedSubviews: [leftInsetView, supportingView, rightInsetView])
     
     private let stationNameLabel: UILabel = {
         let label = UILabel()
@@ -59,8 +36,7 @@ final class StationImageView: UIView {
     }()
     
     // MARK: - Initializers
-    init(boldBorder: Bool = false) {
-        self.boldBorder = boldBorder
+    override init(frame: CGRect) {
         super.init(frame: .zero)
         setupImageView()
         setupSubMainView()
@@ -68,42 +44,27 @@ final class StationImageView: UIView {
     }
     
     required init?(coder: NSCoder) {
-        self.boldBorder = false
-        super.init(coder: coder)
+        fatalError("init(coder:) has not been implemented")
     }
     
     private func setupImageView() {
         
-        subMainView.addSubview(imageView)
+        subSupportingView.addSubview(imageView)
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate(
-            [imageView.leadingAnchor.constraint(equalTo: subMainView.leadingAnchor),
-             imageView.topAnchor.constraint(equalTo: subMainView.topAnchor),
-             imageView.trailingAnchor.constraint(equalTo: subMainView.trailingAnchor),
-             imageView.bottomAnchor.constraint(equalTo: subMainView.bottomAnchor)
-            ]
-        )
+        imageView.fillSuperview()
     }
     
     private func setupSubMainView() {
-        mainView.addSubview(subMainView)
-        subMainView.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate(
-            [subMainView.leadingAnchor.constraint(equalTo: mainView.leadingAnchor, constant: 8),
-             subMainView.topAnchor.constraint(equalTo: mainView.topAnchor, constant: 8),
-             subMainView.trailingAnchor.constraint(equalTo: mainView.trailingAnchor, constant: -8),
-             subMainView.bottomAnchor.constraint(equalTo: mainView.bottomAnchor, constant: -8)
-            ]
-        )
+        supportingView.addSubview(subSupportingView)
+        subSupportingView.translatesAutoresizingMaskIntoConstraints = false
+        subSupportingView.fillSuperview(withConstant: 4)
     }
     
     private func setupStackView() {
         addSubview(stackView)
         stackView.translatesAutoresizingMaskIntoConstraints = false
         
-        let mainViewWidthConstraint = mainView.widthAnchor.constraint(equalToConstant: 60)
+        let mainViewWidthConstraint = supportingView.widthAnchor.constraint(equalToConstant: 100) //60
         mainViewWidthConstraint.priority = UILayoutPriority(750)
         mainViewWidthConstraint.isActive = true
         
@@ -112,12 +73,11 @@ final class StationImageView: UIView {
              stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
              stackView.topAnchor.constraint(equalTo: topAnchor, constant: 8),
              
-             leftInsetView.widthAnchor.constraint(equalToConstant: 8),
+             leftInsetView.widthAnchor.constraint(equalToConstant: 1),
              rightInsetView.widthAnchor.constraint(equalTo: leftInsetView.widthAnchor),
 
              mainViewWidthConstraint,
-//             mainView.widthAnchor.constraint(equalToConstant: 60),
-             mainView.heightAnchor.constraint(equalTo: mainView.widthAnchor)
+             supportingView.heightAnchor.constraint(equalTo: supportingView.widthAnchor)
             ]
         )
     }

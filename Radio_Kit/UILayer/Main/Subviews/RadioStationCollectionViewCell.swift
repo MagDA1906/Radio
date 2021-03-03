@@ -10,7 +10,7 @@ import UIKit
 
 final class RadioStationCollectionViewCell: UICollectionViewCell {
     // MARK: - Properties
-    let stationView = StationImageView(boldBorder: true)
+    let stationView = StationImageView()
     
     // MARK: - Initializers
     override init(frame: CGRect) {
@@ -31,14 +31,7 @@ final class RadioStationCollectionViewCell: UICollectionViewCell {
     private func setupStationImageView() {
         contentView.addSubview(stationView)
         stationView.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate(
-            [stationView.leadingAnchor.constraint(equalTo: leadingAnchor),
-             stationView.trailingAnchor.constraint(equalTo: trailingAnchor),
-             stationView.topAnchor.constraint(equalTo: topAnchor),
-             stationView.bottomAnchor.constraint(equalTo: bottomAnchor)
-            ]
-        )
+        stationView.fillSuperview()
     }
     
     func configureCell() {
